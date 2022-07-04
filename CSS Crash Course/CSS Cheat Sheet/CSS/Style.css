@@ -39,6 +39,13 @@ a:visited{
     width: 80%;
     margin: auto;
 }
+
+.button input[type="submit"]{
+  background-color: #555;
+  color: white; 
+  padding: 10px 10px;
+  border: none;
+ }
 .box-1 {
     background-color: #333;
   color: #f4f4f4;
@@ -81,7 +88,7 @@ a:visited{
 .categories {
   border: 1px gray solid;
   border-radius: 15px;
-  padding-left: 32px;
+  padding: 32px;
 }
 
 .categories h2 {
@@ -101,8 +108,36 @@ a:visited{
     list-style-image: url('../CSS/Images/check.png');
 }
 
-.form-group{
-  padding-left: 192px;
+
+button:hover{ 
+  color: rgb(255, 11, 11);
+ } 
+
+
+ .my-form{
+  padding: 40px 170px 150px 150px;
 }
+.my-form label{
+  line-height: 2em;
+}
+
+.my-form.form-group{
+  padding-bottom: 8px;
+} 
+
+.my-form label{
+  display:block;
+ } 
+
+ .my-form input[type="text"], .my-form textarea{
+  padding:8px;
+  width: 100%;
+ } 
+
+ .my-form input[type="submit"], .my-form text{
+  padding:9px;
+  width: 101.6%; 
+  margin-top: 10px;  
+ }
 
 
