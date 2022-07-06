@@ -1,7 +1,7 @@
 /*
 *{
-    margin: 0%;
-padding: 0%;
+  margin: 0%;
+  padding: 0%;
 } 
 */
 
@@ -19,35 +19,48 @@ body {
   margin: 0%;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+.button[type="submit"] {
+  background-color: black;
+  color: white;
+  border: none;
+
+  padding: 10px;
 }
+
+.button:hover[type="submit"] {
+  background-color: #333;
+  color: lightskyblue;
+}
+
+.fix-me {
+  position: fixed;
+  top: 400px;
+}
+
+
+.container {
+  width: 80%;
+  margin-left: 160px;
+  margin-right: 160px;
+}
+
+.clr {
+  clear: both;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
 a:hover {
-    color: hotpink;
+  color: hotpink;
 }
 
 a:active {
-    color: pink;
+  color: pink;
 }
-a:visited{ 
-    color: red; 
-    
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-}
-
-.button input[type="submit"]{
-  background-color: #555;
-  color: white; 
-  padding: 10px 10px;
-  border: none;
- }
 .box-1 {
-    background-color: #333;
+  background-color: #333;
   color: #f4f4f4;
   border-right: 5px rebeccapurple solid;
   border-left: 5px rebeccapurple solid;
@@ -99,45 +112,101 @@ a:visited{
   padding: 0%;
   list-style: square;
   list-style: none;
-} 
-
-.categories li{ 
-    padding-bottom: 6px;
-    border-bottom: dotted 1px black;
-    padding-top: 6px;
-    list-style-image: url('../CSS/Images/check.png');
 }
 
-
-button:hover{ 
-  color: rgb(255, 11, 11);
- } 
-
-
- .my-form{
-  padding: 40px 170px 150px 150px;
+.categories li {
+  padding-bottom: 6px;
+  border-bottom: dotted 1px black;
+  padding-top: 6px;
+  list-style-image: url("../CSS/Images/check.png");
 }
-.my-form label{
+
+.my-form {
+  margin: 160px;
+}
+.my-form label {
   line-height: 2em;
 }
 
-.my-form.form-group{
-  padding-bottom: 8px;
-} 
+.my-form.form-group {
+  padding-bottom: 200px;
+}
 
-.my-form label{
-  display:block;
- } 
+.my-form label {
+  display: block;
+}
 
- .my-form input[type="text"], .my-form textarea{
-  padding:8px;
+input[type="text"],
+.my-form textarea {
+  padding: 8px;
   width: 100%;
- } 
+  margin-bottom: 20px;
+}
 
- .my-form input[type="submit"], .my-form text{
-  padding:9px;
-  width: 101.6%; 
-  margin-top: 10px;  
- }
+input[type="text"],
+.my-form {
+  margin-top: 10px;
+}
 
+.block {
+  float: left;
+  width: 33.3%;
+  border: 1px solid lightgray;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
+#main-block {
+  float: left;
+  width: 70%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#side-bar {
+  float: right;
+  width: 30%;
+  background-color: darkgray;
+  color: white;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.p-box {
+  width: 800px;
+  height: 500px;
+  border: 1px solid black;
+  margin-top: 30px;
+  position: relative;
+  background-image: url('../CSS/Images/bgimage.jpg'); 
+  background-repeat: no-repeat; 
+  background-position: 100px 200px;  
+  background-position: center top;  
+}
+
+.p-box h1 {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+
+.p-box h2 {
+  position: absolute;
+  bottom: 230px;
+  left: 343px;
+}
+
+.my-list li:first-child{
+  background: red; 
+}
+
+  .my-list li:last-child{
+  background: blue; 
+}
+  .my-list li:nth-child(5){
+         background: yellow;
+  }
+  .my-list li:nth-child(even){
+         background: purple;
+  } 
+  
